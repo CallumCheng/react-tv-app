@@ -5,8 +5,8 @@ import React from 'react';
 const ShowCard = ({data}) =>{
 
     return <div className="show-card">
-            {data["image"] &&  <img src={data["image"]["medium"]}></img>}
-            {/* <img src={ data["image"] ? data["image"]["medium"] : "" }></img>  As a ternerary operator */}
+            {/* {data["image"] && <img src={data["image"]["medium"]}></img>} As a React function */}
+            <img src={ data["image"] ? data["image"]["medium"] : "" }></img>  
             <h2>{data.name}</h2>
             <p dangerouslySetInnerHTML={{__html: data.summary}}></p>
             </div>

@@ -15,7 +15,7 @@ const SearchForm = ( {handleSearchSubmission}) => {
     }
 
     return <form onSubmit={handleSubmit}>
-            <label htmlFor="search-box">Query:</label>
+            <label htmlFor="search-box"></label>
             <input type="text" onChange={handleInput} value={inputValue} id="search-box" required /> 
             <input type="submit" value="Search" />
             </form>
