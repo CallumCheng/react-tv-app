@@ -8,7 +8,7 @@ const ShowCard = ({data}) =>{
             {/* {data["image"] && <img src={data["image"]["medium"]}></img>} As a React function */}
             <img src={ data["image"] ? data["image"]["medium"] : "" }></img>  
             <h2>{data.name}</h2>
-            <p dangerouslySetInnerHTML={{__html: data.summary}}></p>
+            <p role="paragraph">{data.summary}</p>
             </div>
 
 }
